@@ -1,4 +1,4 @@
-# Emotion-Guided-Music-Accomplainiment-Generation
+# Emotion-Guided-Music-Accompaniment-Generation
 This is the codes repository for the project "Emotion-guided Music Accomplaniment Generation". 
 
 Training and validation set is derived from [POP909 dataset](https://github.com/music-x-lab/POP909-Dataset) and
