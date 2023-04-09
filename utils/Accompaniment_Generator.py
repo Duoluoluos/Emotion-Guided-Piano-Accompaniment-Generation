@@ -164,5 +164,5 @@ class EG_ACC:
         output_fs = os.listdir(self.save_folder)
         for music in input_fs:
             self.Chorderator('data/blstm.pt', self.input_melody_folder +'/'+music)
-            self.texture_design(input_fs = self.save_folder +'/'+music.split('.')[-2] + '_chd.mid'
-                                 ,SPOTLIGHT=[], SEGMENTATION='A8B8A8B8\n')
+            self.texture_design(input_fs = "generate_midi/chord_gen.mid"
+                                  ,SPOTLIGHT=[], SEGMENTATION='A8A8B8B8\n')
