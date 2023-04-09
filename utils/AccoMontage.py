@@ -162,8 +162,7 @@ def render_acc(pianoRoll, chord_table, query_seg, indices, shifts, acc_pool, mod
     chd_encoder = RnnEncoder(36, 1024, 256)
     rhy_encoder = TextureEncoder(256, 1024, 256)
     chd_decoder = RnnDecoder(z_dim=256)
-#    pt_decoder = PtvaeDecoderwithAtt(note_embedding=None, dec_dur_hid_size=64, z_size=512)
-    pt_decoder = PtvaeDecoder(note_embedding=None, dec_dur_hid_size=64, z_size=512)
+    pt_decoder = PtvaeDecoderwithAtt(note_embedding=None, dec_dur_hid_size=64, z_size=512)
     model = DisentangleVAE('Duoluoluos', torch.device('cuda'), chd_encoder,
                            rhy_encoder, pt_decoder, chd_decoder).cuda()
     checkpoint = torch.load(model_path)
