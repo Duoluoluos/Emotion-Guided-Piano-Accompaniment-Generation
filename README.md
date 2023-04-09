@@ -8,7 +8,7 @@ emotion-guided music generation test set is a part of [Nottingham Dataset](https
 
 Harmonization module is updated  (2023/2/2)
 
-Download the data folder first. [Click here](https://drive.google.com/file/d/1TAQymlAQQQpHfny-uqkYACrJf-fMS5ln/view?usp=sharing). 
+First, [click here](https://drive.google.com/file/d/1TAQymlAQQQpHfny-uqkYACrJf-fMS5ln/view?usp=sharing) download the data folder. 
 UI module will be completed in the future.
 
 ## Run Demos
