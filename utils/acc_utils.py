@@ -4,7 +4,6 @@ from models.model import DisentangleVAE
 from models.ptvae  import PtvaeDecoder, RnnEncoder, TextureEncoder, PtvaeDecoderwithAtt, \
     RnnDecoder
 from models.EC2model import VAE
-from utils.evaluation import arousal_evaluation
 sys.path.append('./utils')
 from format_converter import melody_matrix2data, chord_matrix2data, accompany_matrix2data
 
