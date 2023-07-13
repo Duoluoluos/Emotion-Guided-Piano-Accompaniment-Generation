@@ -7,7 +7,7 @@ Training and validation set is derived from [POP909 dataset](https://github.com/
 emotion-guided music generation test set is a part of [Nottingham Dataset](https://ifdo.ca/~seymour/nottingham/nottingham.html).
 
 Harmonization module is updated  (2023/2/2)
-
+The paper is accepted at International Joint Conference on Neural Networks 2023(IJCNN2023), [here](https://arxiv.org/abs/2307.04015) is the paper link.
 First, [click here](https://drive.google.com/file/d/1TAQymlAQQQpHfny-uqkYACrJf-fMS5ln/view?usp=sharing) to download the data folder. 
 UI module will be completed in the future.
 
