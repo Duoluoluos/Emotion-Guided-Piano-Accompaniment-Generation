@@ -1,5 +1,5 @@
 # Emotion-Guided-Music-Accompaniment-Generation
-This is the codes repository for the project "Emotion-guided Music Accomplaniment Generation". 
+This is the codes repository for the project "Emotion-guided Piano Accomplaniment Generation". 
 
 Baseline models are from [Accomontage Repo](https://github.com/zhaojw1998/AccoMontage).
 
