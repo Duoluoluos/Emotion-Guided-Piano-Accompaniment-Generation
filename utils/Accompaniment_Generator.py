@@ -155,7 +155,7 @@ class EG_ACC:
             song_name = df.iloc[idx_song][1]
             reference_set.append((idx_song, song_name))
         print('Generating...')
-        midi = render_acc(pianoRoll, chord_table, query_seg, path, shift, acc_pool, 'data/Poly-dis-VAE-epoch4.pt')
+        midi = render_acc(pianoRoll, chord_table, query_seg, path, shift, acc_pool, 'data/VA-VAE_master.pt')
         midi.write(self.save_folder + '/' + input_fs.split('/')[-1].split('.')[-2]+'_acc.mid')
         print('Result saved')
 
@@ -164,5 +164,5 @@ class EG_ACC:
         output_fs = os.listdir(self.save_folder)
         for music in input_fs:
             self.Chorderator('data/blstm.pt', self.input_melody_folder +'/'+music)
-            self.texture_design(input_fs = "generate_midi/chord_gen.mid"
+            self.texture_design(input_fs = "generate_midi/"+ music.split(".")[-2]+"_chd.mid"
                                   ,SPOTLIGHT=[], SEGMENTATION='A8A8B8B8\n')
