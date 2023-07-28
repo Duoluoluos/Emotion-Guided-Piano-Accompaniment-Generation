@@ -8,7 +8,9 @@ from models.ptvae import RnnEncoder, RnnDecoder, PtvaeDecoderwithAtt, \
     TextureEncoder
 from config import *
 import torch.nn.functional as F
+from typing import List, Optional
 
+    
 class DisentangleVAE(PytorchModel):
 
     def __init__(self, name, device, chd_encoder, rhy_encoder, decoder,
@@ -235,7 +237,3 @@ class BiLSTM(nn.Module):
         x, _ = self.lstm(x)
         output = self.output(x)
         return F.log_softmax(output,dim=2)
-
-
-
-
