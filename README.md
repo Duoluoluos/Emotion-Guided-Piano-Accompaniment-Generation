@@ -25,4 +25,5 @@ The paper is accepted at International Joint Conference on Neural Networks 2023(
 
 ## Q&A
 1. Q: Sometimes the generated chords dont fully harmonize the melody. How come?
+   
    A: The randomness and controllabilty of LSTM-based harmonizer isnt satisfactory. **Use music theory** for the harmonization instead.
