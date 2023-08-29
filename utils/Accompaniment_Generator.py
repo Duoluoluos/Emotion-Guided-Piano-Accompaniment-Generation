@@ -93,7 +93,7 @@ class EG_ACC:
             self.export_music(score, chord_list, gap_list, filename)
         print("Melody has been harmonized with chords")
 
-    def texture_design(self,input_fs,SEGMENTATION,SPOTLIGHT=[],PREFILTER=(0,0),NOTE_SHIFT=0):
+    def texture_design(self,input_fs,PREFILTER,SEGMENTATION,SPOTLIGHT=[],NOTE_SHIFT=0):
         print('Loading Reference Data')
         data = np.load('data/phrase_data0714.npz', allow_pickle=True)
         melody = data['melody']
@@ -159,10 +159,10 @@ class EG_ACC:
         midi.write(self.save_folder + '/' + input_fs.split('/')[-1].split('.')[-2]+'_acc.mid')
         print('Result saved')
 
-    def solve(self):
+    def solve(self,arousal=20):
         input_fs = os.listdir(self.input_melody_folder)
         output_fs = os.listdir(self.save_folder)
         for music in input_fs:
             self.Chorderator('data/blstm.pt', self.input_melody_folder +'/'+music)
             self.texture_design(input_fs = "generate_midi/"+ music.split(".")[-2]+"_chd.mid"
-                                  ,SPOTLIGHT=[], SEGMENTATION='A8A8B8B8\n')
+                                  ,SPOTLIGHT=[], SEGMENTATION='A8A8B8B8\n',PREFILTER=(arousal//10,arousal//10))
