@@ -22,3 +22,7 @@ The paper is accepted at International Joint Conference on Neural Networks 2023(
  4. Wait a while and the accompaniment will be saved in the `./generate_midi`.
 
  5. For more emotional flow guided generation samples, please refer to [https://soundcloud.com/ko9isjyplxrb/sets/demos-of-emotion-guided-generated-accompaniment](https://soundcloud.com/ko9isjyplxrb/sets/demos-of-emotion-guided-generated-accompaniment).
+
+## Q&A
+1. Q: Sometimes the generated chords dont fully harmonize the melody. How come?
+   A: The randomness and controllabilty of LSTM-based harmonizer isnt satisfactory. **Use music theory** for the harmonization instead.
