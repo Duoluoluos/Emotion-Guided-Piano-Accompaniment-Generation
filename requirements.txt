@@ -1,0 +1,10 @@
+numpy==1.23.5
+pandas==1.5.3
+pretty-midi==0.2.9
+tensorboard==2.11.0
+tensorboard-data-server==0.6.1
+tensorboard-plugin-wit==1.8.1
+tensorboardX==2.5.1
+torch==1.13.0+cu117
+tqdm==4.65.0
+
