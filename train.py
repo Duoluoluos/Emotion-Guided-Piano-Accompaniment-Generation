@@ -12,7 +12,6 @@ from amc_dl.torch_plus import LogPathManager, SummaryWriters, \
 from amc_dl.torch_plus.train_utils import kl_anealing
 import torch
 from torch import optim
-from models.multiloss import MGDA
 from config import *
 
 class MusicDataLoaders(DataLoaders):
